@@ -1,1 +1,220 @@
-Hello
+<html>
+
+
+
+
+<head>
+    <title>Smart House</title>
+     <link rel="stylesheet" href="main.css"> 
+
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="header">
+            <div class="innerbox headingfont ">Welcome to home manager </div>
+        </div>
+
+
+        <div class="bilden">
+            <img src="smart-home-kitchen-phone-1.jpg" width="50%">
+        </div>
+
+        <div class="myTable">
+
+            <div class="kitchen">
+                <div class="secondH"> Kitchen</div>
+
+                <div class="leftS">
+                    <div class="thirdH"> Light</div>
+
+                    <div>
+                        <button onclick="document.getElementById('kitchenlamp').src = 'pic_bulbon.gif'">On</button>
+
+                        <img id="kitchenlamp" src="pic_bulboff.gif" style="width:50px">
+
+                        <button onclick="document.getElementById('kitchenlamp').src = 'pic_bulboff.gif'">Off</button>
+                    </div>
+
+                </div>
+
+
+                <div class="middle">
+                    <div class="thirdH"> Curtain</div>
+                    <form action="/action_page.php">
+                        <input type="radio" name="servo" value="Close"> Close<br>
+                        <input type="radio" name="servo" value="HalfOpen"> Half-open<br>
+                        <input type="radio" name="servo" value="Open"> Open<br>
+                        <input type="submit" value="GO">
+                    </form>
+
+                </div>
+                <div class="rightS">
+                    <div class="thirdH"> Temperature</div>
+
+
+                    <div class="slidecontainer">
+                        <input type="range" min="10" max="30" value="20" class="slider" id="myRangeKitchen">
+                        <p>Value: <span id="outKitchen"></span></p>
+                    </div>
+                    <script>
+                        var sliderK = document.getElementById("myRangeKitchen");
+                        var outputK = document.getElementById("outKitchen");
+                        outputK.innerHTML = sliderK.value;
+
+                        sliderK.oninput = function () {
+                            outputK.innerHTML = this.value;
+                        }
+                    </script>
+
+
+
+                </div>
+            </div>
+
+            <div class="livingroom">
+                <div class="secondH"> Livingroom</div>
+
+                <div class="leftS">
+                    <div class="thirdH"> Light</div>
+
+                    <div>
+                        <button onclick="document.getElementById('livlamp').src='pic_bulbon.gif'">On</button>
+
+                        <img id="livlamp" src="pic_bulboff.gif" style="width:50px">
+
+                        <button onclick="document.getElementById('livlamp').src = 'pic_bulboff.gif'">Off</button>
+                    </div>
+
+                    <div class="middle">
+                        <div class="thirdH"> Curtain</div>
+
+                        <form action="/action_page.php">
+                            <input type="radio" name="servo" value="Close"> Close<br>
+                            <input type="radio" name="servo" value="HalfOpen"> Half-open<br>
+                            <input type="radio" name="servo" value="Open"> Open<br>
+                            <input type="submit" value="GO">
+                        </form>
+
+                    </div>
+                    <div class="rightS">
+                        <div class="thirdH"> Temperature</div>
+
+
+                        <div class="slidecontainer">
+                            <input type="range" min="10" max="30" value="20" class="slider" id="myRangeLivingroom">
+                            <p>Value: <span id="outLivingroom"></span></p>
+                        </div>
+                        <script>
+                        var sliderL = document.getElementById("myRangeLivingroom");
+                        var outputL = document.getElementById("outLivingroom");
+                        outputL.innerHTML = sliderL.value;
+
+                        sliderL.oninput = function () {
+                            outputL.innerHTML = this.value;
+                        }
+                        </script>
+
+
+                    </div>
+                </div>
+
+
+            <div class="bedroom">
+                <div class="secondH"> Bedroom</div>
+
+                <div class="leftS">
+                    <div class="thirdH"> Light</div>
+
+                    <div>
+                        <button onclick="document.getElementById('bedlamp').src='pic_bulbon.gif'">On</button>
+
+                        <img id="bedlamp" src="pic_bulboff.gif" style="width:50px">
+
+                        <button onclick="document.getElementById('bedlamp').src = 'pic_bulboff.gif'">Off</button>
+                    </div>
+
+                    <div class="middle">
+                        <div class="thirdH"> Curtain</div>
+
+
+                        <form action="/action_page.php">
+                            <input type="radio" name="servo" value="Close"> Close<br>
+                            <input type="radio" name="servo" value="HalfOpen"> Half-open<br>
+                            <input type="radio" name="servo" value="Open"> Open<br>
+                            <input type="submit" value="GO">
+                        </form>
+
+
+                    </div>
+                    <div class="rightS">
+                        <div class="thirdH"> Temperature</div>
+
+
+                        <div class="slidecontainer">
+                            <input type="range" min="10" max="30" value="20" class="slider" id="myRangeBedroom">
+                            <p>Value: <span id="outBedroom"></span></p>
+                        </div>
+                        <script>
+                        var sliderB = document.getElementById("myRangeBedroom");
+                        var outputB = document.getElementById("outBedroom");
+                        outputB.innerHTML = sliderB.value;
+
+                        sliderB.oninput = function () {
+                            outputB.innerHTML = this.value;
+                        }
+                        </script>
+
+
+
+
+                    </div>
+                </div>
+
+
+            <div class="hall">
+                <div class="secondH"> Hall</div>
+
+                <div class="leftS">
+                    <div class="thirdH"> Light</div>
+
+                    <div>
+                        <button onclick="document.getElementById('halllamp').src='pic_bulbon.gif'">On</button>
+
+                        <img id="halllamp" src="pic_bulboff.gif" style="width:50px">
+
+                        <button onclick="document.getElementById('halllamp').src = 'pic_bulboff.gif'">Off</button>
+                    </div>
+
+                    <div class="rightS">
+                        <div class="thirdH"> Temperature</div>
+
+
+                        <div class="slidecontainer">
+                            <input type="range" min="10" max="30" value="20" class="slider" id="myRangeHall">
+                            <p>Value: <span id="outHall"></span></p>
+                        </div>
+                        <script>
+                        var sliderH = document.getElementById("myRangeHall");
+                        var outputH = document.getElementById("outHall");
+                        outputH.innerHTML = sliderH.value;
+
+                        sliderH.oninput = function () {
+                            outputH.innerHTML = this.value;
+                        }
+                        </script>
+
+
+                    </div>
+                </div>
+
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
