@@ -1,0 +1,62 @@
+body
+{
+    background-color: turquoise;
+    text-align: center;
+    font-family: fantasy;
+    font-style: italic;
+    font-size: 200%;
+}
+
+
+.plus
+{
+    background-image: url("https://cdn0.iconfinder.com/data/icons/ie_Bright/128/plus_add_blue.png");
+    width:130px;
+    height:130px;
+    background-repeat:no-repeat;
+    }
+    
+    .plus.minus{
+    background-image: url("https://cdn0.iconfinder.com/data/icons/ie_Bright/128/plus_add_minus.png");
+    width:130px;
+    height:130px;
+    background-repeat:no-repeat;
+    }
+
+
+table
+{
+margin: auto;
+
+}
+.osse
+{
+    /* background-color: yellow; */
+color: aqua;
+    text-align: right;
+    font: bold 100% arial;
+    font-family: 'fantasy',  monospace;
+    background-attachment: fixed;
+}
+
+.kitchen{background: blue; }
+
+.livingroom{background: limegreen; }
+.secondH{
+    font-family: 'fantasy', serif; 
+    font-size: 100px;
+    font-style: italic;
+}
+
+.bedroom{background: beige}
+.thirdH {
+    font-family: 'fantasy', serif;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.hall{background: white}
+.leftS {
+    font-family: 'fantasy', serif;
+    font-style: italic;
+}
